@@ -1,0 +1,26 @@
+<h2>Editando Contato</h2>
+<form [formGroup]="contatoForm" class="contatoForm">
+  <label>
+    Nome:
+    <input formControlName="nome" />
+  </label>
+  <br />
+  <label>
+    Email:
+    <input formControlName="email" />
+  </label>
+
+  <label>
+    Telefone:
+    <input formControlName="telefone" />
+  </label>
+
+  <p>Sexo:</p>
+  <mat-radio-group formControlName="sexo">
+    <mat-radio-button value="1">Masculino</mat-radio-button>
+    <mat-radio-button value="0">Feminino</mat-radio-button>
+  </mat-radio-group>
+  <br />
+  <button (click)="onSave()" >Salvar</button>
+  <button (click)="onCancel()">Cancelar</button>
+</form>

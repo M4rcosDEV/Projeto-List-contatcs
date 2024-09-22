@@ -1,0 +1,11 @@
+{
+  "contatos": [
+    {
+      "id": "d699",
+      "nome": "Marcos Vinicius",
+      "email": "marcosifba01@gmail.com",
+      "telefone": "77 998441226",
+      "sexo": true
+    }
+  ]
+}

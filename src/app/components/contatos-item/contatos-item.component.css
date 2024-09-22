@@ -1,0 +1,50 @@
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; 
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    font-family: 'Arial', sans-serif; 
+}
+
+
+.card-body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-top: none; 
+    border-radius: 0 0 8px 8px; 
+    font-family: 'Arial', sans-serif;
+}
+
+.options-card {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd; 
+    border-radius: 0 0 8px 8px;
+}
+
+.icons mat-icon{
+    margin: 5px;
+}
+.options-card span {
+    cursor: pointer; 
+    color: #4a90e2;
+    transition: color 0.3s; 
+}
+
+.options-card span:hover {
+    color: #d35400; 
+}
+
+.homem {
+    background-color: #4a90e2;
+}
+
+.mulher {
+    background-color: #ee0fb6;
+}

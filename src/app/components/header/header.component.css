@@ -1,0 +1,15 @@
+*{
+    position: fixed;
+}
+
+.btn-adicionar {
+    top: 20px; /* Distância do topo da tela */
+    left: 20px; /* Distância do lado direito da tela */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}

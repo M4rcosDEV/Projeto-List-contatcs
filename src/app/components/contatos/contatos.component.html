@@ -1,0 +1,6 @@
+<div class="container">
+    <app-adicionar-contato (adicionarContato)="AddContato($event)"></app-adicionar-contato>
+    <div class="card-contatos">
+        <app-contatos-item *ngFor="let contato of contatos" [contato] ="contato" class="contato-item" (editar)="openEditDialog(contato)" (onDeleteContato)="deleteContato($event)"></app-contatos-item>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+
+  <form (ngSubmit)="onSubmit()" class="form-add-contato">
+    <h2>Adicionar contato</h2>
+    <div class="form-group">
+      <div class="input-container">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" [(ngModel)]="contato.nome" required>
+        
+      </div>
+
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" [(ngModel)]="contato.email" required>
+      </div>
+
+      <div class="input-container">
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" [(ngModel)]="contato.telefone" required>
+      </div>
+
+      <mat-radio-group aria-label="Select an option" name="sexo" [(ngModel)]="contato.sexo">
+        <p>Sexo:</p>
+        <mat-radio-button value="1">Masculino</mat-radio-button>
+        <mat-radio-button value="0">Feminino</mat-radio-button>
+      </mat-radio-group>
+      
+      <!-- <div class="sexo-container">
+        <p>Sexo:</p>
+        <label class="radio-option">
+          <input type="radio" name="sexo" [(ngModel)]="contato.sexo" value=1 required>
+          <span class="custom-radio"></span>
+          Masculino
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="sexo" [(ngModel)]="contato.sexo" value=0 required>
+          <span class="custom-radio"></span>
+          Feminino
+        </label>
+      </div> -->
+    </div>
+
+    <button type="submit" class="btn-submit">Adicionar Contato</button>
+  </form>
+

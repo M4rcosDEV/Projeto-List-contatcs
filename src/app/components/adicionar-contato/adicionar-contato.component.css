@@ -1,0 +1,110 @@
+
+  h2{
+    text-align: center;
+    
+  }
+
+  .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }
+  
+  .form-add-contato {
+    position: fixed;
+    background-color: #f9f9f9;
+    width: 20vw;
+    height: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-size: 14px; 
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-container input {
+    width: 10vw;
+    padding: 10px;
+    font-size: 16px; 
+  }
+  
+  .input-container label {
+    font-size: 20px; 
+  }
+  
+  .btn-submit {
+    padding: 15px 30px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    margin-left: 20px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #4d84be; 
+  }
+  
+
+  .btn-submit:focus {
+    outline: none;
+    background-color: #4d84be;
+  }
+  
+
+  .input-container {
+    position: relative; /* Necessário para posicionar o label */
+    margin-bottom: 30px; /* Espaçamento abaixo do campo */
+  }
+  
+  .input-container label {
+    font-size: 16px; /* Tamanho da fonte */
+    color: #777; /* Cor do label */
+    transition: all 0.3s ease; /* Transição suave */
+  }
+  
+  .input-container input {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    outline: none; /* Remove o contorno padrão */
+    transition: border-color 0.3s ease; /* Transição suave para a borda */
+  }
+  
+  .input-container input:focus {
+    border-color: #007bff; /* Cor da borda ao focar */
+  }
+  
+  .input-container input:focus + label,
+  .input-container input:not(:placeholder-shown) + label {
+    top: -20px; /* Posiciona o label acima do campo ao focar */
+    left: 8px; /* Ajusta a posição horizontal do label */
+    font-size: 14px; /* Reduz o tamanho do label */
+    color: #007bff; /* Muda a cor do label ao focar */
+  }
+  
+  /* Estilização adicional para evitar sobreposição */
+  .input-container input:focus ~ label,
+  .input-container input:not(:placeholder-shown) ~ label {
+    z-index: 1; /* Garante que o label fique acima do input */
+  }
+  
